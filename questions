@@ -1,0 +1,116 @@
+Topic 1: 
+
+Assignment 1:
+Write a Hibernate program to create an employee table in the backend and insert 5 employee objects into the database.
+The following are the details of the employee table. Name Varchar2, EmpId Number(should be auto incremented),Designation Varchar2,Salary Number
+
+Assignment 2:
+Write a Hibernate program to create a Product table in the backend and insert 10 product objects into the database.
+The following are the details of the Product table.
+ProductName varchar2, ProductId Number, Price Number
+The value of the ProductId shuld be taken from a sequence which is created at the backend
+
+Topic 2: 
+
+Assignment 1:
+Write an Employee class with the Members employee ID, employeeName and employeeBand.
+Implement a client Code to Save, Delete, Update and Read Employee Object.
+
+Assignment 2:
+The ABC LTD Company hires employees and wants to computerize employee-salary record maintenance. The company maintains a database of employees in Oracle. 
+The employee table contains information related to employee and is shown in the following employee table structure.
+
+Empcode
+Number (4)
+Primary Key
+EmpName
+Varchar (20)
+Not Null
+EmpDesignation
+Varchar (4)
+Not Null
+EmpDOB
+Date
+Not Null
+EmpJOD
+Date
+Not Null
+EmpAge
+Number (2)
+Not Null
+EmpBasic_Pay
+Decimal (8,2)
+Not Null
+When a new employee joins the company, the employee record is created in the employee table. EmpCode should be auto generated using sequences. 
+The valid employee details are as follows:
+• Empname: Valid value can contain maximum 20 letters in uppercase
+• EmpDesignation: Valid value is one of these - SE, SSE, SS, SSS
+• Age: Must be in the range >=18 and <=60
+• Basic_Pay: Must be greater than or equal to 6000
+And last difference between employee joining date and date of birth must be greater than 18 years
+Write a Java program to insert some records to the table
+When an employee leaves the company, the record related to that employee needs to be deleted from the employee table.
+Upon deletion the employee details must be stored in another table named employeeLogTab which will maintain the details such as Employee Code, Employee Name, Designation, Last drawn salary, and Leaving_date.
+
+Topic 3 :
+
+Assignment 1:
+Create a program to persist the following class object using Collection Mapping:
+Public class Question{
+Private int id;
+Private String qname;
+Private List options;
+Private String answer.
+}
+
+Assignment 2 :
+Create a program to persist the following class 10 objects using Collection Mapping:
+Public class Continent{
+Private String cname;
+Private Map<Country,Capital> countries;
+}
+
+Assignment 3:
+Create a program to persist the following class 10 objects using Collection Mapping:
+Public class Album{
+Private int albumid;
+Private String aname;
+Private Map<String,List<String>> photos;
+}
+
+Topic 4:
+
+Assignment 1:
+Write a Department class and Employee class such that one department can hold multiple Employee objects. (One-to-Many)
+Implement a client code such that, when we save or delete Department object, automatically Employees of the Department should be stored or deleted in a related table.
+
+
+Assignment 2:
+Write an Employee class and Passport class such that, one employee object should hold only one passport object (one-to-one).
+Implement a client code such that when we save or delete Employee object, automatically passport object should be stored or deleted in a related table.
+
+
+Assignment 3:
+Write a Student and Course class such that one student can hold multiple course object. Implement a Client code such that one student can opt for multiple courses. 
+Similarly same course be opted by multiple students (many-to-many).
+
+Topic 5: 
+Create a Car table like below… RegNo Model Color Manufacturer Price
+KL-07 AB 123 Polo White Volkswagen 700000
+KL-07 AB 234 Vento Black Volkswagen 600000
+KL-07 AC 345 Corolla Silver Toyota 1000000
+KL-07 BC 123 Sail Uva Red Chevrolet 500000
+
+Assignment 1 : Write a Hibernate program Display the details of all the cars from the above table by using HQL
+
+Assignment 2: Write a Hibernate program to display only the Manufacturer's names which are starting with ‘V’ from above table
+
+Assignment 3: Write a Hibernate program which will ask the user to enter a registration number and display the details of that Vehicle. Assign the value to the query using a label.
+
+Assignment 4: Write a Hibernate program to display only the list of cars which are having price less than 6 lacs from above table 
+
+Topic 6: 
+Assignment 1:
+Write an Employee class with the Members employeeID, employeeName, and employeeSalary. Implement a Two subclass by name RegularEmployee with the member name qplc and ContractEmployee with the member name allowance. Write a client class such that, when you save/delete Regular Employee or Contract employee class object, appropriate information should be stored or deleted from the related table using “Table per subclass Approach”. Assignment 2:
+Write an Employee class with the Members employeeID, employeeName, and employeeSalary. Implement a Two subclass by name RegularEmployee with the member name qplc and ContractEmployee with the member name allowance. Write a client class such that, when you save/delete Regular Employee or Contract employee class object, appropriate information should be stored or deleted from the related table using “Table per hierarchy Approach”. Assignment 3:
+Write an Employee class with the Members employeeID, employeeName, and employeeSalary. Implement a Two subclass by name RegularEmployee with the member name qplc and ContractEmployee with the member name allowance. Write a client class such that, when you save/delete Regular Employee or Contract employee class object, appropriate information should be stored or deleted from the related table using “Table per concrete class Approach”.
